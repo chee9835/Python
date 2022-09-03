@@ -13,7 +13,7 @@ _(연습문제 풀이 : [https://wikidocs.net/12769#02](https://wikidocs.net/127
 | 수학 | 55   |
 
 ```python
->>> print((80 + 75 + 55)/3)
+print((80 + 75 + 55)/3)
 ```
 
 ## Q2
@@ -21,8 +21,8 @@ _(연습문제 풀이 : [https://wikidocs.net/12769#02](https://wikidocs.net/127
 자연수 13이 홀수인지 짝수인지 판별할 수 있는 방법에 대해 말해 보자.
 
 ```python
->>> num = 13
->>> print("홀수" if num % 2 != 0 else "짝수")
+num = 13
+print("홀수" if num % 2 != 0 else "짝수")
 ```
 
 ## Q3
@@ -32,11 +32,10 @@ _(연습문제 풀이 : [https://wikidocs.net/12769#02](https://wikidocs.net/127
 > ※ 문자열 슬라이싱 기법을 사용해 보자.
 
 ```python
->>> pin = "881120-1068234"
->>> birth = '19' + pin[0:6]
->>> gender = "male" if pin[7] == "1" else "female"
->>>
->>> print("생년월일 : {0} / 성별 : {1}".format(birth, gender))
+pin = "881120-1068234"
+birth = '19' + pin[0:6]
+gender = "male" if pin[7] == "1" else "female"
+print("생년월일 : {0} / 성별 : {1}".format(birth, gender))
 ```
 
 ## Q4
@@ -44,8 +43,8 @@ _(연습문제 풀이 : [https://wikidocs.net/12769#02](https://wikidocs.net/127
 주민등록번호 뒷자리의 맨 첫 번째 숫자는 성별을 나타낸다. 주민등록번호에서 성별을 나타내는 숫자를 출력해 보자.
 
 ```python
->>> pin = "881120-1068234"
->>> print("male" if pin[7] == "1" else "female")
+pin = "881120-1068234"
+print("male" if pin[7] == "1" else "female")
 ```
 
 > ※ 문자열 인덱싱을 사용해 보자.
@@ -55,8 +54,8 @@ _(연습문제 풀이 : [https://wikidocs.net/12769#02](https://wikidocs.net/127
 다음과 같은 문자열 a:b:c:d가 있다. 문자열의 replace 함수를 사용하여 a#b#c#d로 바꿔서 출력해 보자.
 
 ```python
->>> a = "a:b:c:d"
->>> a.replace(":","#")
+a = "a:b:c:d"
+a.replace(":","#")
 ```
 
 ## Q6
@@ -66,10 +65,9 @@ _(연습문제 풀이 : [https://wikidocs.net/12769#02](https://wikidocs.net/127
 > ※ 리스트의 내장 함수를 사용해 보자.
 
 ```python
->>> a = [1, 3, 5, 4, 2]
->>>
->>> a.sort(reverse = True)
->>> print(a)
+a = [1, 3, 5, 4, 2]
+a.sort(reverse = True)
+print(a)
 ```
 
 ## Q7
@@ -79,8 +77,8 @@ _(연습문제 풀이 : [https://wikidocs.net/12769#02](https://wikidocs.net/127
 > ※ 문자열의 join 함수를 사용하면 리스트를 문자열로 쉽게 만들 수 있다.
 
 ```python
->>> list = ['Life', 'is', 'too', 'short']
->>> " ".join(list)
+list = ['Life', 'is', 'too', 'short']
+" ".join(list)
 ```
 
 ## Q8
@@ -90,9 +88,9 @@ _(연습문제 풀이 : [https://wikidocs.net/12769#02](https://wikidocs.net/127
 > ※ 더하기(+)를 사용해 보자.
 
 ```python
->>> t1 = (1,2,3)
->>> t2 = (4,) #단지 1개의 요소만을 가질 때는 요소 뒤에 콤마(,)를 반드시 붙여야 한다
->>> t1 + t2
+t1 = (1,2,3)
+t2 = (4,) #단지 1개의 요소만을 가질 때는 요소 뒤에 콤마(,)를 반드시 붙여야 한다
+t1 + t2
 ```
 
 ## Q9
@@ -100,8 +98,8 @@ _(연습문제 풀이 : [https://wikidocs.net/12769#02](https://wikidocs.net/127
 다음과 같은 딕셔너리 a가 있다.
 
 ```python
->>> a = dict()
->>> a
+a = dict()
+a
 {}
 ```
 
@@ -119,13 +117,13 @@ _(연습문제 풀이 : [https://wikidocs.net/12769#02](https://wikidocs.net/127
 딕셔너리 a에서 'B'에 해당되는 값을 추출해 보자.
 
 ```python
->>> a = {'A':90, 'B':80, 'C':70}
+a = {'A':90, 'B':80, 'C':70}
 ```
 
 > ※ 딕셔너리의 pop 함수를 사용해 보자.
 
 ```python
->>> a.get('B')
+a.get('B')
 ```
 
 ## Q11
@@ -133,14 +131,14 @@ _(연습문제 풀이 : [https://wikidocs.net/12769#02](https://wikidocs.net/127
 a 리스트에서 중복 숫자를 제거해 보자.
 
 ```python
->>> a = [1, 1, 1, 2, 2, 3, 3, 3, 4, 4, 5]
+a = [1, 1, 1, 2, 2, 3, 3, 3, 4, 4, 5]
 ```
 
 > ※ 집합 자료형의 요솟값이 중복될 수 없다는 특징을 사용해 보자.
 
 ```python
->>> setA = set(a)
->>> setA #{1, 2, 3, 4, 5}
+setA = set(a)
+setA #{1, 2, 3, 4, 5}
 ```
 
 ## Q12
@@ -148,9 +146,9 @@ a 리스트에서 중복 숫자를 제거해 보자.
 파이썬은 다음처럼 동일한 값에 여러 개의 변수를 선언할 수 있다. 다음과 같이 a, b 변수를 선언한 후 a의 두 번째 요솟값을 변경하면 b 값은 어떻게 될까? 그리고 이런 결과가 오는 이유에 대해 설명해 보자.
 
 ```python
->>> a = b = [1, 2, 3]
->>> a[1] = 4
->>> print(b)
+a = b = [1, 2, 3]
+a[1] = 4
+print(b)
 ```
 
 > 😄b도 a와 동일하게 변경됨. b와 a가 같은 주소값을 참조하고 있기 때문에
